@@ -80,5 +80,29 @@ last you can see the applicaton expose to 5000 port you can see application runn
        $docker (contanerID)
 
 
+NEXT AUTOMATE PROCESS
+
+when there is commit happen in repository
+automate trigger and build the image and run in container through CI/CD process jenkins
+
+Step1 :- Please go to jenkins configure with current project
+
+     Click ------> Configure ------> Scroll down -----> in Build steps --> Execute Shell command ---> 
+Add in shell command test box 
+        docker image build -t flask-app-simple .
+       docker run -p 5000:5000 -d flask-app-simple
+
+      Step2 :- Before build please give permission to workspace for project ----> chmod 777 [workspace-of-project-github-repo-project]
+      step3 :- Add jenkins to docker group    
+            $ sudo usermod -a -G docker jenkins
+            $ sudo systemctl restart jenkins    
+Done with steps
+     Now navigate to project app -> left side build-Now -> Automated the process from Git-commot -> jenkins -> build a image -> run image in container -> expose port 5000 to render application in browser
+     
+    final you can see application rendering in browser
+          $ docker ps      -> cmd know the status of your container running has UP
+
+
+
 
 
