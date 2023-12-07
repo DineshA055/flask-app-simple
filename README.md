@@ -65,6 +65,10 @@ display conatiner ID and PORT exposed in 5000 and status of running
    step9 :- if you want to run the application only in your machineip   
    step10 :- Go to instance ->security group -> allow -> port 5000 with myip
 
+last you can see the applicaton expose to 5000 port you can see application running in browser as well in container
+    incase if you want to stop container 
+       $docker (contanerID)
+
 
 
 
