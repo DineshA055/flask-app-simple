@@ -1,4 +1,14 @@
 # flask-app-simple
+What is Container ?
+A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
+What is docker?
+ A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application
+
+
+Simple term of Container and Docker :- 
+    • A container is a standard unit of software that packages up code and all its dependencies
+    • A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application
+
 
 Step by Step guide for create and run container using Docker 
 
