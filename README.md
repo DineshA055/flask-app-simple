@@ -104,5 +104,13 @@ Done with steps
 
 
 
+Important :-
 
+Create a docker file 
+   CONTAINERS - RUN
+1. Os - ex:- Ubuntu required for support base image
+2. Code required 
+3. Libraries - to run requirement
+4. Command - to run the application and expose 
 
+Process (Docker-Container)   :- 1st Build process -----> 2nd Image build -----> 3rd Run application in container
